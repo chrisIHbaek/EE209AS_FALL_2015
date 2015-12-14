@@ -1,3 +1,8 @@
+/*
+* Code for Arduino UNO in center unit
+* Author: Xiangrui Liu & In Hwan "Chris" Baek
+*/
+
 #include "IRremote.h"
 #include "CppList.h"
 
@@ -132,12 +137,12 @@ void loop() {
             digitalWrite(6, HIGH);
           }
           else if(data == L_ON_R_ON){
-            digitalWrite(8, HIGH);
             digitalWrite(6, HIGH);
+            digitalWrite(8, HIGH);
           }
           else if(data == L_OFF_R_OFF){
-            digitalWrite(8, LOW);
             digitalWrite(6, LOW);
+            digitalWrite(8, LOW);
           }
           else if(data == L_OFF_R_ON){
             digitalWrite(8, HIGH);
